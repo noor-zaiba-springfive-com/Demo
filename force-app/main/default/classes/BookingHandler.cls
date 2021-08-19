@@ -242,7 +242,6 @@ public class BookingHandler extends SourceSystemUpdate {
 
                 
         public Account getContactProfile() {
-            
             Account contact          = new Account();
             contact.FirstName        = this.FIRST_NAME;
             contact.LastName         = this.LAST_NAME;
@@ -252,13 +251,11 @@ public class BookingHandler extends SourceSystemUpdate {
             contact.MarketingSmsConsent__pc 		 = this.OPTIN_SMS;
             contact.MarketingPostalAddressConsent__pc = this.OPTIN_POSTAL;  
             contact.PersonMailingStreet 		= this.VOL1;
-            // contact.PersonMailingStreet = this.VOL2;  
             contact.PersonMailingCity  			= this.CITY;
             contact.PersonMailingPostalCode 	= this.ZIP_COD;
             contact.PersonMailingCountry	 	= this.ISO_COUNTRY_CODE;
             contact.PersonBirthdate 			= this.DATE_OF_BIRTH_PAX1; 			
             contact.IPAddress__pc               =this.IP_ADDRESS;
-            
             return contact;
 
         }       
