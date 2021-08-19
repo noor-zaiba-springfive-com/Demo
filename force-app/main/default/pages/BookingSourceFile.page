@@ -1,0 +1,300 @@
+<apex:page controller="BookingSourceFileController">
+    
+    <apex:form style="max-width : 800px; margin : 1rem auto;">
+        
+        <apex:sectionHeader title="Stub" subtitle="Booking CRS Source File" />
+        
+        <apex:pageBlock >
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="EMAIL" for="EMAIL"/>
+                    <apex:inputText value="{!bookingInput.EMAIL}" id="EMAIL"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="OPTIN_EMAIL" for="OPTIN_EMAIL"/>
+                    <apex:inputText value="{!bookingInput.OPTIN_EMAIL}" id="OPTIN_EMAIL"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="FIRST_NAME" for="FIRST_NAME"/>
+                    <apex:inputText value="{!bookingInput.FIRST_NAME}" id="FIRST_NAME"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="LAST_NAME" for="LAST_NAME"/>
+                    <apex:inputText value="{!bookingInput.LAST_NAME}" id="LAST_NAME"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="BOOKING_NUMBER" for="BOOKING_NUMBER"/>
+                    <apex:inputText value="{!bookingInput.BOOKING_NUMBER}" id="BOOKING_NUMBER"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="OPTIN_SMS" for="OPTIN_SMS"/>
+                    <apex:inputText value="{!bookingInput.OPTIN_SMS}" id="OPTIN_SMS"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="OPTIN_POSTAL" for="OPTIN_POSTAL"/>
+                    <apex:inputText value="{!bookingInput.OPTIN_POSTAL}" id="OPTIN_POSTAL"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="VOL1" for="VOL1"/>
+                    <apex:inputText value="{!bookingInput.VOL1}" id="VOL1"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="VOL2" for="VOL2"/>
+                    <apex:inputText value="{!bookingInput.VOL2}" id="VOL2"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="PHONE_1" for="PHONE_1"/>
+                    <apex:inputText value="{!bookingInput.PHONE_1}" id="PHONE_1"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="PHONE_2" for="PHONE_2"/>
+                    <apex:inputText value="{!bookingInput.PHONE_2}" id="PHONE_2"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="CITY" for="CITY"/>
+                    <apex:inputText value="{!bookingInput.CITY}" id="CITY"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="ZIP_COD" for="ZIP_COD"/>
+                    <apex:inputText value="{!bookingInput.ZIP_COD}" id="ZIP_COD"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="ISO_COUNTRY_CODE" for="ISO_COUNTRY_CODE"/>
+                    <apex:inputText value="{!bookingInput.ISO_COUNTRY_CODE}" id="ISO_COUNTRY_CODE"/>
+                </apex:pageBlockSectionItem>
+               
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="TOT_GROSS_EUR" for="TOT_GROSS_EUR"/>
+                    <apex:inputText value="{!bookingInput.TOT_GROSS_EUR}" id="TOT_GROSS_EUR"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="TOT_NET_EUR" for="TOT_NET_EUR"/>
+                    <apex:inputText value="{!bookingInput.TOT_NET_EUR}" id="TOT_NET_EUR"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="TOT_GROSS_CURR" for="TOT_GROSS_CURR"/>
+                    <apex:inputText value="{!bookingInput.TOT_GROSS_CURR}" id="TOT_GROSS_CURR"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="TOT_NET_CURR" for="TOT_NET_CURR"/>
+                    <apex:inputText value="{!bookingInput.TOT_NET_CURR}" id="TOT_NET_CURR"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="HOTEL_CODE" for="HOTEL_CODE"/>
+                    <apex:inputText value="{!bookingInput.HOTEL_CODE}" id="HOTEL_CODE"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="BOOKING_DATE" for="BOOKING_DATE"/>
+                    <apex:inputText value="{!bookingInput.BOOKING_DATE}" id="BOOKING_DATE"/>
+                </apex:pageBlockSectionItem>
+                
+              
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="BOOKING_STATUS" for="BOOKING_STATUS"/>
+                    <apex:inputText value="{!bookingInput.BOOKING_STATUS}" id="BOOKING_STATUS"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="BOOKING_TYPE" for="BOOKING_TYPE"/>
+                    <apex:inputText value="{!bookingInput.BOOKING_TYPE}" id="BOOKING_TYPE"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="ARR_DATE" for="ARR_DATE"/>
+                    <apex:inputText value="{!bookingInput.ARR_DATE}" id="ARR_DATE"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DEP_DATE" for="DEP_DATE"/>
+                    <apex:inputText value="{!bookingInput.DEP_DATE}" id="DEP_DATE"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="SOURCE_OF_BUSINESS" for="SOURCE_OF_BUSINESS"/>
+                    <apex:inputText value="{!bookingInput.SOURCE_OF_BUSINESS}" id="SOURCE_OF_BUSINESS"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="ID_MOZ" for="ID_MOZ"/>
+                    <apex:inputText value="{!bookingInput.ID_MOZ}" id="ID_MOZ"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="MOD_DATE" for="MOD_DATE"/>
+                    <apex:inputText value="{!bookingInput.MOD_DATE}" id="MOD_DATE"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="BRAND" for="BRAND"/>
+                    <apex:inputText value="{!bookingInput.BRAND}" id="BRAND"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="IP_ADDRESS" for="IP_ADDRESS"/>
+                    <apex:inputText value="{!bookingInput.IP_ADDRESS}" id="IP_ADDRESS"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="PAX_ADULTS" for="PAX_ADULTS"/>
+                    <apex:inputText value="{!bookingInput.PAX_ADULTS}" id="PAX_ADULTS"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="PAX_CHILDREN" for="PAX_CHILDREN"/>
+                    <apex:inputText value="{!bookingInput.PAX_CHILDREN}" id="PAX_CHILDREN"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="PAX_INFANTS" for="PAX_INFANTS"/>
+                    <apex:inputText value="{!bookingInput.PAX_INFANTS}" id="PAX_INFANTS"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="BOOKING_ORIGINS" for="BOOKING_ORIGINS"/>
+                    <apex:inputText value="{!bookingInput.BOOKING_ORIGINS}" id="BOOKING_ORIGINS"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="AGENCY_CODE" for="AGENCY_CODE"/>
+                    <apex:inputText value="{!bookingInput.AGENCY_CODE}" id="AGENCY_CODE"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="AGENCY_NAME" for="AGENCY_NAME"/>
+                    <apex:inputText value="{!bookingInput.AGENCY_NAME}" id="AGENCY_NAME"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="WC_COD" for="WC_COD"/>
+                    <apex:inputText value="{!bookingInput.WC_COD}" id="WC_COD"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DIFFUSION_CODE" for="DIFFUSION_CODE"/>
+                    <apex:inputText value="{!bookingInput.DIFFUSION_CODE}" id="DIFFUSION_CODE"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="BOOKING_SOURCE" for="BOOKING_SOURCE"/>
+                    <apex:inputText value="{!bookingInput.BOOKING_SOURCE}" id="BOOKING_SOURCE"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="LANGUAGE" for="LANGUAGE"/>
+                    <apex:inputText value="{!bookingInput.LANGUAGE}" id="LANGUAGE"/>
+                </apex:pageBlockSectionItem>
+                
+                 <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="CURR_CODE" for="CURR_CODE"/>
+                    <apex:inputText value="{!bookingInput.CURR_CODE}" id="CURR_CODE"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX1" for="DATE_OF_BIRTH_PAX1"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX1}" id="DATE_OF_BIRTH_PAX1"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX2" for="DATE_OF_BIRTH_PAX2"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX2}" id="DATE_OF_BIRTH_PAX2"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX3" for="DATE_OF_BIRTH_PAX3"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX3}" id="DATE_OF_BIRTH_PAX3"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX4" for="DATE_OF_BIRTH_PAX4"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX2}" id="DATE_OF_BIRTH_PAX4"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX5" for="DATE_OF_BIRTH_PAX5"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX5}" id="DATE_OF_BIRTH_PAX5"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX6" for="DATE_OF_BIRTH_PAX6"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX6}" id="DATE_OF_BIRTH_PAX6"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX7" for="DATE_OF_BIRTH_PAX7"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX7}" id="DATE_OF_BIRTH_PAX7"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX8" for="DATE_OF_BIRTH_PAX8"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX8}" id="DATE_OF_BIRTH_PAX8"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX9" for="DATE_OF_BIRTH_PAX9"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX9}" id="DATE_OF_BIRTH_PAX9"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX10" for="DATE_OF_BIRTH_PAX10"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX10}" id="DATE_OF_BIRTH_PAX10"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX11" for="DATE_OF_BIRTH_PAX11"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX11}" id="DATE_OF_BIRTH_PAX11"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DATE_OF_BIRTH_PAX12" for="DATE_OF_BIRTH_PAX12"/>
+                    <apex:inputText value="{!bookingInput.DATE_OF_BIRTH_PAX12}" id="DATE_OF_BIRTH_PAX12"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Send" action="{!sendBooking}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>
