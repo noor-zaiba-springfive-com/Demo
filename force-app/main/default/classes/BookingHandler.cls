@@ -260,8 +260,7 @@ public class BookingHandler extends SourceSystemUpdate {
 
         }       
         
-        public public_event__x getEvent() {
-            
+        public public_event__x getEvent()
             public_event__x event 	= new public_event__x(); 
             event.event_date__c   	= this.MOD_DATE;
             event.event_date__c   	= Datetime.now();
