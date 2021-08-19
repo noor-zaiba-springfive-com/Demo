@@ -268,7 +268,6 @@ public class BookingHandler extends SourceSystemUpdate {
 			event.MediaSource__c 	= 'WEB';
             event.SourceSystem__c 	= 'Travel Box';
             event.FeatureSource__c  = 'BOOKING';
-
             // TO BE COMPLETED
             
             return event;
