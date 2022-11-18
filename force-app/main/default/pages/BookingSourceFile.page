@@ -1,6 +1,6 @@
 <apex:page controller="BookingSourceFileController">
     
-    <apex:form style="max-width : 800px; margin : 1rem auto;">
+<!--df-->    <apex:form style="max-width : 800px; margin : 1rem auto;">
         
         <apex:sectionHeader title="Stub" subtitle="Booking CRS Source File" />
         
